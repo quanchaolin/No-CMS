@@ -1,0 +1,70 @@
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# installation specific file
+assets/caches/*.js
+assets/caches/*.css
+modules/*/config/module_config_*.php
+application/config/main
+application/config/.saved
+application/config/site-*
+application/config/tmp/*.php
+/.htaccess
+application/logs/log*.php
+assets/grocery_crud/texteditor/ckeditor/config.js
+assets/kcfinder/config.php
+/hostname.php
+_cache_*.js
+_cache_*.css
+application/config/token*.php
+
+# the sql
+modules/*/assets/db/backup*.sql
+
+# info module
+modules/*/controllers/Info_*.php
+
+.tags*
+
+# Some pictures
+modules/static_accessories/assets/images/slides/main*.jpg
+modules/static_accessories/assets/images/slides/coba*.jpg
+
+# my private modules
+modules/typing_defense
+modules/loanword_searchengine
+modules/stiki_ibk
+modules/library_app
+modules/shop
+modules/artificial_intelligence/assets/data/1_*
+modules/simple_erp
+modules/ishare
+modules/lifelines
+modules/example
+modules/indonesia_area
+modules/market
+modules/angkot

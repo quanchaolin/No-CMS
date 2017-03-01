@@ -1,0 +1,25 @@
+@extends(default-one-column)
+
+@section(layout_body)
+    <div class="row-fluid">
+        <div id="__section-banner">{{ widget_name:section_banner }}</div>
+        <div>
+            <div id="__section-left-and-content" class="col-md-9">
+                <div>{{ navigation_path }}</div><hr />
+                <div>
+                    <div id="__section-left" class="col-md-3">
+                        {{ widget_name:section_left }}
+                    </div>
+                    <div id="__section-content" class="col-md-9">
+                        {{ layout:body }}
+                    </div>
+                </div>
+            </div><!--/#layout-content-->
+            <div id="__section-right" class="col-md-3">
+                {{ widget_name:section_right }}
+            </div><!--/#layout-widget-->
+        </div>
+    </div><!--/row-->
+    <hr>
+@end_section
+

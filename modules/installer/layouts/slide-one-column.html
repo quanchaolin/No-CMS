@@ -1,0 +1,27 @@
+@extends(minimal)
+
+@section(layout_top)
+    @parent
+    {{ widget_name:static_accessories_slideshow }}
+@end_section
+
+@section(layout_body)
+    <div class="row-fluid">
+        <div>
+            <div id="__section-left-and-content" class="col-md-12">
+                <div>{{ navigation_path }}</div><hr />
+                <div>
+                    <div id="__section-content" class="col-md-12">
+                        {{ layout:body }}
+                    </div>
+                </div>
+            </div><!--/#layout-content-->
+        </div>
+    </div><!--/row-->
+    <hr>
+@end_section
+
+@section(layout_bottom)
+    <footer>{{ widget_name:section_bottom }}</footer>
+@end_section
+

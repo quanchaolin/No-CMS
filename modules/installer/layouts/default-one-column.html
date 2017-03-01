@@ -1,0 +1,33 @@
+@extends(minimal)
+
+@section(layout_body)
+    <div class="row-fluid">
+        <div id="__section-banner">{{ widget_name:section_banner }}</div>
+        <div>
+            <div id="__section-left-and-content" class="col-md-12">
+                <div>{{ navigation_path }}</div><hr />
+                <div>
+                    <div id="__section-content" class="col-md-12">
+                        {{ layout:body }}
+                    </div>
+                </div>
+            </div><!--/#layout-content-->
+        </div>
+    </div><!--/row-->
+    <hr>
+@end_section
+
+@section(layout_bottom)
+    <footer>{{ widget_name:section_bottom }}</footer>
+@end_section
+
+@section(layout_script)
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // if section-banner is empty, remove it
+            if($.trim($('__section-banner').html()) == ''){
+                $('__section-banner').remove();
+            }
+        });
+    </script>
+@end_section
